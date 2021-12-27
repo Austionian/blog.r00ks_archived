@@ -9,6 +9,10 @@ import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
+const Twitter = require("../assets/twitter_black.svg")
+const Github = require("../assets/github_black.svg")
+const Email = require("../assets/email_black.svg")
+
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
@@ -20,6 +24,8 @@ const Bio = () => {
           }
           social {
             twitter
+            github
+            email
           }
         }
       }
@@ -45,9 +51,25 @@ const Bio = () => {
       {author?.name && (
         <p>
           Written by <strong>{author.name}</strong> {author?.summary || null}
+          <br/>
+          Find me on
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
-            You should follow them on Twitter
+          <a href={`https://twitter.com/${social.twitter || ``}`}>
+            <Twitter 
+              className="social-icon"  
+            />
+          </a>
+          {`, `}
+          <a href={`https://github.com/${social.github || ''}`}>
+            <Github 
+              className="social-icon"
+            />
+          </a>
+          {`,or `}
+          <a href={`mailto:${social?.email || ''}`}>
+            <Email 
+              className="social-icon"
+            />
           </a>
         </p>
       )}

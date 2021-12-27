@@ -3,15 +3,26 @@ module.exports = {
     title: `blog.r00ks`,
     author: {
       name: `Austin Rooks`,
-      summary: `who lives and works in Milwaukee building useful things.`,
+      summary: `who lives and works in Milwaukee.`,
     },
     description: `A simple blog about tech, books, philosophy.`,
     siteUrl: `https://blog.r00ks.io/`,
     social: {
       twitter: `austin_rooks`,
+      github: 'austionian',
+      email: 'austin@r00ks.io',
     },
   },
   plugins: [
+    {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: `${__dirname}/src/assets/`
+        }
+      }
+    },
+    `gatsby-plugin-typescript`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,

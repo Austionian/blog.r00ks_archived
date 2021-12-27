@@ -54,7 +54,7 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
-  --color-primary: #005b99;
+  --color-primary: #2bbc8a;
   --color-text: #2e353f;
   --color-text-light: #4f5969;
   --color-heading: #1a202c;
@@ -259,6 +259,10 @@ a:focus {
   margin: 0;
 }
 
+.main-heading:hover {
+  color: #2bbc8a;
+}
+
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
@@ -330,4 +334,9 @@ a:focus {
   ol {
     list-style-position: inside;
   }
+}
+
+.social-icon:hover {
+  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(288deg) brightness(119%) contrast(119%);
+  /* fill: #d480aa; */
 }

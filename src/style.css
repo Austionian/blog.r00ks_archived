@@ -259,10 +259,6 @@ a:focus {
   margin: 0;
 }
 
-.main-heading:hover {
-  color: #2bbc8a;
-}
-
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
@@ -277,6 +273,10 @@ a:focus {
   color: var(--color-primary);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
+}
+
+.post-list-item h2:hover {
+  color: var(--color-text)
 }
 
 .post-list-item header {

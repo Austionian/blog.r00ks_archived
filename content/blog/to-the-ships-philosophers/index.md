@@ -1,6 +1,7 @@
 ---
 title: "To the Ships, Philosophers!"
 date: "2021-12-22T23:46:37.121Z"
+description: "Living in a world that requires a new faith."
 ---
 
 ## Nietzsche

@@ -46,10 +46,10 @@ const Layout = ({ location, title, children }) => {
               }}
               defaultChecked = {dark_theme}
               onChange={e => {
-                if (e.target.checked) {
+                if (e.target.checked && typeof window !== 'undefined') {
                   document.body.classList.add("dark");
                   setTheme('dark');
-                } else {
+                } else if (typeof window !== 'undefined') {
                   document.body.classList.remove("dark");
                   setTheme('light');
                 }

@@ -1,5 +1,3 @@
-import React, {useState, useEffect} from 'react'
-
 /**
  * Checks if the theme has already been set or it the browser
  * has a default to supply.

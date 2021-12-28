@@ -1,3 +1,5 @@
+import React, {useState, useEffect} from 'react'
+
 /**
  * Checks if the theme has already been set or it the browser
  * has a default to supply.
@@ -6,7 +8,7 @@
 export function getTheme() {
     let theme = null;
     // Check if the theme was set already in local storage.
-    if (typeof window !== 'undefined') {
+    if (typeof window !== 'undefined' && window.localStorage.getItem('theme')) {
         theme = localStorage.getItem('theme');
     }
 

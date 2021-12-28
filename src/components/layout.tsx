@@ -1,4 +1,5 @@
 import * as React from "react"
+import { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import Toggle from 'react-toggle'
 
@@ -12,15 +13,15 @@ const Layout = ({ location, title, children }) => {
   const isRootPath = location.pathname === rootPath
   let header
 
-  let dark_theme = getTheme();
+  const [dark_theme, setDarkTheme] = useState(getTheme())
 
-  if (typeof window !== 'undefined') {
+  useEffect(() => {
     if (dark_theme) {
       document.body.classList.add("dark");
     } else {
       document.body.classList.remove("dark");
-    } 
-  }
+    }
+  })
 
   if (isRootPath) {
     header = (
@@ -42,18 +43,21 @@ const Layout = ({ location, title, children }) => {
         <div className="index-heading">
           {header}
           <Toggle
+              id="theme-toggle"
               icons={{
                 checked: <Moon />,
                 unchecked: <Sun />,
               }}
-              defaultChecked = {dark_theme}
+              defaultChecked={dark_theme}
               onChange={e => {
                 if (e.target.checked && typeof window !== 'undefined') {
                   document.body.classList.add("dark");
                   setTheme('dark');
+                  setDarkTheme(true);
                 } else if (typeof window !== 'undefined') {
                   document.body.classList.remove("dark");
                   setTheme('light');
+                  setDarkTheme(false);
                 }
               }}
             />

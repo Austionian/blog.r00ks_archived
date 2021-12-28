@@ -1,5 +1,6 @@
 export function getTheme() {
-    let theme = localStorage.getItem('theme') || null;
+    const windowGlobal = typeof window !== 'undefined' && window;
+    let theme = windowGlobal.localStorage.getItem('theme') || null;
 
     if (theme === null) {
         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
@@ -13,5 +14,6 @@ export function getTheme() {
 }
 
 export function setTheme(theme) {
-    localStorage.setItem('theme', theme);
+    const windowGlobal = typeof window !== 'undefined' && window
+    windowGlobal.localStorage.setItem('theme', theme);
 }

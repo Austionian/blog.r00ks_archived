@@ -365,7 +365,6 @@ a:focus {
 
 .social-icon:hover {
   filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(288deg) brightness(119%) contrast(119%);
-  /* fill: #d480aa; */
 }
 
 /* Toggle */
@@ -399,13 +398,6 @@ a:focus {
   padding: 0;
   position: absolute;
   width: 1px;
-}
-
-.react-toggle--disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
 }
 
 .react-toggle-track {

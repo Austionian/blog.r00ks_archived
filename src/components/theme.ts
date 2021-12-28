@@ -13,7 +13,7 @@ export function getTheme() {
     }
 
     // If not in local storage, check for the browser preset.
-    if (theme === null) {
+    if (theme === null && typeof window !== 'undefined') {
         const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
         return prefersDarkScheme.matches;
     }

@@ -14,10 +14,12 @@ const Layout = ({ location, title, children }) => {
 
   let dark_theme = getTheme();
 
-  if (dark_theme) {
-    document.body.classList.add("dark");
-  } else {
-    document.body.classList.remove("dark");
+  if (typeof window !== 'undefined') {
+    if (dark_theme) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    } 
   }
 
   if (isRootPath) {

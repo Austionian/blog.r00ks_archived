@@ -48,7 +48,7 @@ const Layout = ({ location, title, children }) => {
                 checked: <Moon />,
                 unchecked: <Sun />,
               }}
-              defaultChecked={getTheme()}
+              checked={dark_theme}
               onChange={e => {
                 if (e.target.checked && typeof window !== 'undefined') {
                   document.body.classList.add("dark");

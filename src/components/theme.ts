@@ -21,13 +21,3 @@ export function getTheme() {
     }
     return false;
 }
-
-/**
- * Sets a theme when explicity choosen in local storage.
- * @param theme (str) light or dark theme to be set.
- */
-export function setTheme(theme) {
-    if (typeof window !== 'undefined') {
-        localStorage.setItem('theme', theme);
-    }
-}

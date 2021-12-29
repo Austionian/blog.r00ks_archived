@@ -35,6 +35,7 @@ const ThemeToggle = () => {
             onChange={e => {
                 e.target.checked ? setDarkTheme(true) : setDarkTheme(false)
             }}
+            aria-label="Switch between Dark and Light mode"
         />
     )
 };

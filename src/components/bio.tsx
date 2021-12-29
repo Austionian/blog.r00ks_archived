@@ -56,19 +56,22 @@ const Bio = () => {
           {` `}
           <a href={`https://twitter.com/${social.twitter || ``}`}>
             <Twitter 
-              className="social-icon"  
+              className="social-icon"
+              alt="twitter icon"
             />
           </a>
           {`, `}
           <a href={`https://github.com/${social.github || ''}`}>
             <Github 
               className="social-icon"
+              alt="github icon"
             />
           </a>
           {`,or `}
           <a href={`mailto:${social?.email || ''}`}>
             <Email 
               className="social-icon"
+              alt="email icon"
             />
           </a>
         </p>

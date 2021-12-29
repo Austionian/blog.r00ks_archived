@@ -50,7 +50,7 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Written by <a href="https://r00ks.io"><strong>{author.name}</strong></a> {author?.summary || null}
           <br/>
           Find me on
           {` `}

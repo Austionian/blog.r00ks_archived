@@ -1,27 +1,12 @@
 import * as React from "react"
-import { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import Toggle from 'react-toggle'
 
-import { getTheme, setTheme } from './theme'
-
-const Moon = require('../assets/moon.svg');
-const Sun = require('../assets/sun.svg');
+import ThemeToggle from "./toggle"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `/`
   const isRootPath = location.pathname === rootPath
   let header
-
-  const [dark_theme, setDarkTheme] = useState(getTheme())
-
-  useEffect(() => {
-    if (dark_theme) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  })
 
   if (isRootPath) {
     header = (
@@ -42,28 +27,12 @@ const Layout = ({ location, title, children }) => {
       <header className="global-header">
         <div className="index-heading">
           {header}
-          <Toggle
-              id="theme-toggle"
-              icons={{
-                checked: <Moon />,
-                unchecked: <Sun />,
-              }}
-              checked={dark_theme}
-              onChange={e => {
-                if (e.target.checked && typeof window !== 'undefined') {
-                  document.body.classList.add("dark");
-                  setTheme('dark');
-                  setDarkTheme(true);
-                } else if (typeof window !== 'undefined') {
-                  document.body.classList.remove("dark");
-                  setTheme('light');
-                  setDarkTheme(false);
-                }
-              }}
-            />
+          <ThemeToggle />
         </div>
       </header>
-      <main>{children}</main>
+      <main>
+        {children}
+      </main>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

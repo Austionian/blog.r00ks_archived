@@ -61,7 +61,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
-              offsetY: `50`,
+              offsetY: `100`,
               className: `md-header-a`,
             },
           },

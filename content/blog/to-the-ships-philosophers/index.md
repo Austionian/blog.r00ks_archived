@@ -4,11 +4,11 @@ date: "2021-12-22T23:46:37.121Z"
 description: "Living in a world that requires a new faith."
 ---
 
+The year is 1882, a year which began on a Sunday. John D. Rockefeller is conglomerating his monopoly. Polygamy is being made illegal in the United States. Thomas Edison is about to turn lights on outside his laboratory for the first time. Fredrick Nietzsche is wandering the Swiss mountains and about to publish *The Gay Science*.
+
 ## Nietzsche
 ![Nietzsche](./Nietzsche.webp)
 <sub>The bigger the handlebar, the more inspired the thinking.</sub>
-
-The year is 1882, a year which began on a Sunday. John D. Rockefeller is conglomerating his monopoly. Polygamy is being made illegal in the United States. Thomas Edison is about to turn lights on outside his laboratory for the first time. Fredrick Nietzsche is wandering the Swiss mountains and about to publish *The Gay Science*.
 
 I’ve thought a lot recently about Nietzsche and contemporary life. 
 

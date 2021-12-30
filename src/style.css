@@ -34,6 +34,7 @@
     Times, serif;
   --font-body: var(--fontFamily-serif);
   --font-heading: var(--fontFamily-sans);
+  --fontWeight-light: 100;
   --fontWeight-normal: 400;
   --fontWeight-medium: 500;
   --fontWeight-semibold: 600;
@@ -309,10 +310,10 @@ a:focus {
 }
 
 .header-link-home {
-  font-weight: var(--fontWeight-bold);
+  font-weight: var(--fontWeight-black);
   font-family: var(--font-heading);
   text-decoration: none;
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-3);
 }
 
 .bio {
@@ -332,11 +333,11 @@ a:focus {
 }
 
 .blog-post header h1 {
-  margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
+  margin: var(--spacing-16) var(--spacing-0) var(--spacing-2) var(--spacing-0);
 }
 
 .blog-post header p {
-  font-size: var(--fontSize-2);
+  font-size: var(--fontSize-0);
   font-family: var(--font-heading);
 }
 
@@ -383,13 +384,17 @@ a:focus {
   }
 }
 
+.toc-header {
+  font-weight: var(--fontWeight-light);
+}
+
 .toc-a {
   text-decoration: none;
   line-height: var(--lineHeight-tight);
 }
 
 .toc-a:hover {
-  font-weight: 800;
+  font-weight: var(--fontWeight-extrabold);
 }
 
 .toc-item {
@@ -399,17 +404,17 @@ a:focus {
 
 .toc-2 {
   font-size: var(--fontSize-2);
-  margin-left: 0;
+  margin-left: var(--spacing-0);
 }
 
 .toc-3 {
   font-size: var(--fontSize-1);
-  margin-left: 1rem;
+  margin-left: var(--spacing-4);
 }
 
 .toc-4 {
   font-size: var(--fontSize-0);
-  margin-left: 2.5rem;
+  margin-left: var(--spacing-10);
 }
 
 /* Toggle */

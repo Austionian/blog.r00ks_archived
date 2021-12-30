@@ -68,6 +68,7 @@
 html {
   line-height: var(--lineHeight-normal);
   font-size: var(--fontSize-root);
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -366,6 +367,49 @@ a:focus {
 
 .social-icon:hover {
   filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(288deg) brightness(119%) contrast(119%);
+}
+
+@media (min-width: 1200px) {
+  .table-of-contents {
+    top: 100px;
+    right: 50px;
+    position: fixed;
+  }
+}
+
+@media (max-width: 1199px) {
+  .table-of-contents {
+    display: none;
+  }
+}
+
+.toc-a {
+  text-decoration: none;
+  line-height: var(--lineHeight-tight);
+}
+
+.toc-a:hover {
+  font-weight: 800;
+}
+
+.toc-item {
+  list-style-type: none;
+  font-family: var(--fontFamily-sans);
+}
+
+.toc-2 {
+  font-size: var(--fontSize-2);
+  margin-left: 0;
+}
+
+.toc-3 {
+  font-size: var(--fontSize-1);
+  margin-left: 1rem;
+}
+
+.toc-4 {
+  font-size: var(--fontSize-0);
+  margin-left: 2.5rem;
 }
 
 /* Toggle */

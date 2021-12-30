@@ -37,7 +37,7 @@ Nietzsche started a converstation about a new kind of freedom--unimaginable befo
 
 What does it mean that humans believe computers can be trained and built to think like a human? Does that imply the imposibility of a soul or free will? What of the in vogue beliefs of muliverses and simulations? How are we replacing our fundamentals faiths? And are we conscious of it? And further yet, where do our individual responsibilities lie?
 
-#### Embark! (289)
+#### Embark!
 
 >Consider how every individual is affected by an overall philosophical justification of his way of living and thinking: he experiences it as a sun that shines especially for him and bestows warmth, blessings, and fertility on him; it makes him independent of praise and blame, self-sufficient, rich, liberal with happiness and good will; incessantly it refashions evil into good, leads all energies to bloom and ripen, and does not permit the petty weeds of grief and chagrin to come at all. In the end one exclaims: How I wish that many such new suns were yet to be created! Those who are evil or unhappy and the exceptional human being-all these should also have their philosophy, their good right, their sunshine! What is needful is not pity for them. We must learn to abandon this arrogant fancy, however long humanity has hitherto spent learning and practicing it. What these people need is not confession, conjuring of souls, and forgiveness of sins; what is needful is a new *justice*! And a new watchword. And new philosophers. The moral earth, too, is round. The moral earth, too, has its antipodes. The antipodes, too, have the right to exist. There is yet another world to be discovered-and more than one. Embark, philosophers!
 <sub>*The Gay Science*, pg. 231-32</sub>

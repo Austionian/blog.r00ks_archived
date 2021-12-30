@@ -1,11 +1,51 @@
 import React from "react"
 import { Link } from "gatsby"
+import _, { debounce } from "lodash";
+
+declare const window: any;
 
 const Table_of_Contents = ({ headings }) => {
+    const start = () => {
+        scrollSpy(document.querySelectorAll('h2, h3, h4, h5, h6'));
+    };
+
+    const getPosition = (element) => {
+        let valuesArr = [];
+        for (let i = 0; i < element.length; i++) {
+            let yPosition = 0;
+            yPosition += element[i].offsetTop - element[i].scrollTop + element[i].clientTop;
+            valuesArr.push(yPosition - window.scrollY);
+        }
+        return valuesArr;
+    }
+
+    const removeClasses = () => {
+        const els = document.getElementsByClassName("active");
+        if (els[0]) {
+          els[0].classList.remove("active");
+        }
+    };
+
+    const navList = document.getElementsByClassName("toc-a");
+    const scrollSpy = (headings) => {
+        let x = getPosition(headings);
+        for (let i = 0; i < headings.length; i++) {
+            console.log(x)
+            removeClasses();
+            if (x[i] <= 100 && (x[i + 1] > 100 || i + 1 === headings.length)) {
+                navList[i].classList.add("active");
+                return;
+            }
+        }
+    };
+
+    window.addEventListener("scroll", _.debounce(start, 10));
+    window.onload = start();
+
     if (headings.length > 0) {
         return (
-            <div className="table-of-contents">
-                <h4 className="toc-header">Table of Contents</h4>
+            <nav className="table-of-contents">
+                
                 <ul>
                     {headings.map(heading => (
                         <Link className={'toc-a'} key={heading.value + '-anchor'} to={'#' + heading.value.toLowerCase().replace(/\s/g, '-').replace(/[.,\/#!$%\^&\*;:{}=\_`~()]/g,"")}>
@@ -15,7 +55,7 @@ const Table_of_Contents = ({ headings }) => {
                         </Link>
                     ))}
                 </ul>
-            </div>
+            </nav>
         )
     }
     return null;

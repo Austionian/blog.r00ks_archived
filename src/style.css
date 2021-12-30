@@ -417,6 +417,14 @@ a:focus {
   margin-left: var(--spacing-10);
 }
 
+.active {
+  font-weight: var(--fontWeight-extrabold);
+}
+
+.md-header-a {
+  fill: var(--color-text)
+}
+
 /* Toggle */
 .react-toggle {
   touch-action: pan-x;

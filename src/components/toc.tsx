@@ -30,7 +30,6 @@ const Table_of_Contents = ({ headings }) => {
     const scrollSpy = (headings) => {
         let x = getPosition(headings);
         for (let i = 0; i < headings.length; i++) {
-            console.log(x)
             removeClasses();
             if (x[i] <= 100 && (x[i + 1] > 100 || i + 1 === headings.length)) {
                 navList[i].classList.add("active");

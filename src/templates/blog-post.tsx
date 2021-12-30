@@ -25,12 +25,16 @@ const BlogPostTemplate = ({ data, location }) => {
         <header>
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date}</p>
-          <Table_of_Contents headings={post.headings} />
         </header>
-        <section
+        <div className="article">
+          <aside>
+            <Table_of_Contents headings={post.headings} />
+          </aside>
+          <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        </div>
         <hr />
         <footer>
           <Bio />

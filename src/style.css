@@ -284,6 +284,12 @@ a:focus {
   margin: 0;
 }
 
+.article {
+  display: flex;
+  flex-direction:row-reverse;
+  justify-content: space-between;
+}
+
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
@@ -370,11 +376,21 @@ a:focus {
   filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(288deg) brightness(119%) contrast(119%);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1500px) {
   .table-of-contents {
     top: 100px;
-    right: 50px;
-    position: fixed;
+    position: sticky;
+    margin-right: -30vw;
+    padding-left: var(--spacing-32);
+  }
+}
+
+@media (max-width: 1499px) {
+  .table-of-contents {
+    top: 100px;
+    position: sticky;
+    margin-right: -30vw;
+    padding-left: var(--spacing-24);
   }
 }
 

@@ -430,7 +430,17 @@ a:focus {
 
 .toc-4 {
   font-size: var(--fontSize-0);
-  margin-left: var(--spacing-10);
+  margin-left: var(--spacing-8);
+}
+
+.toc-5 {
+  font-size: var(--fontSize-0);
+  margin-left: var(--spacing-12);
+}
+
+.toc-6 {
+  font-size: var(--fontSize-0);
+  margin-left: var(--spacing-16);
 }
 
 .active {

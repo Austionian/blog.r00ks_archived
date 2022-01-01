@@ -17,9 +17,11 @@ const ThemeToggle = () => {
         if (dark_theme) {
           document.body.classList.add("dark");
           localStorage.setItem('theme', 'dark');
+          document.querySelector('meta[name="theme-color"]').setAttribute("content", '#0d1117');
         } else {
           document.body.classList.remove("dark");
           localStorage.setItem('theme', 'light');
+          document.querySelector('meta[name="theme-color"]').setAttribute("content", '#a64765');
         }
     }, [dark_theme])
 

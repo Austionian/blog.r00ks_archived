@@ -2,8 +2,12 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
+import { config } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
 
 import ThemeToggle from "./toggle"
+
+config.autoAddCss = false
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `/`

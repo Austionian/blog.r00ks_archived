@@ -1,5 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 import ThemeToggle from "./toggle"
 
@@ -34,9 +36,13 @@ const Layout = ({ location, title, children }) => {
         {children}
       </main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <FontAwesomeIcon icon={faCopyright} />{" "}{new Date().getFullYear()}
+        {` | `}
+        Built with <a href="https://www.gatsbyjs.com">Gatsby</a>
+        {` | `}
+        <a href="https://github.com">
+          Source Code
+        </a>
       </footer>
     </div>
   )

@@ -8,6 +8,9 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
 const Twitter = require("../assets/twitter_black.svg")
 const Github = require("../assets/github_black.svg")
@@ -55,23 +58,20 @@ const Bio = () => {
           Find me on
           {` `}
           <a href={`https://twitter.com/${social.twitter || ``}`}>
-            <Twitter 
-              className="social-icon"
-              alt="twitter icon"
+            <FontAwesomeIcon
+              icon={faTwitter} 
             />
           </a>
           {`, `}
           <a href={`https://github.com/${social.github || ''}`}>
-            <Github 
-              className="social-icon"
-              alt="github icon"
+            <FontAwesomeIcon
+              icon={faGithub}
             />
           </a>
           {`,or `}
           <a href={`mailto:${social?.email || ''}`}>
-            <Email 
-              className="social-icon"
-              alt="email icon"
+            <FontAwesomeIcon 
+              icon={faPaperPlane}
             />
           </a>
         </p>

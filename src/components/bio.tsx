@@ -12,10 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
-const Twitter = require("../assets/twitter_black.svg")
-const Github = require("../assets/github_black.svg")
-const Email = require("../assets/email_black.svg")
-
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {

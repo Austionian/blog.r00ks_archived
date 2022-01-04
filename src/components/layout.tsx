@@ -44,7 +44,7 @@ const Layout = ({ location, title, children }) => {
         {` | `}
         Built with <a href="https://www.gatsbyjs.com">Gatsby</a>
         {` | `}
-        <a href="https://github.com">
+        <a href="https://github.com/Austionian/blog.r00ks">
           Source Code
         </a>
       </footer>

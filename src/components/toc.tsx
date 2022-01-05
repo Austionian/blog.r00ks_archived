@@ -46,7 +46,6 @@ const Table_of_Contents = ({ headings }) => {
     if (headings.length > 0) {
         return (
             <nav className="table-of-contents">
-                
                 <ul>
                     {headings.map(heading => (
                         <Link className={'toc-a'} key={heading.value + '-anchor'} to={'#' + heading.value.toLowerCase().replace(/\s/g, '-').replace(/[.,\/#!$%\^&\*;:{}=\_`~()]/g,"")}>

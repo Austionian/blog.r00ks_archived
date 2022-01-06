@@ -447,7 +447,7 @@ a:focus {
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1250px) {
   .table-of-contents {
     padding: 1.5rem 3.5rem;
     position: fixed;
@@ -458,7 +458,7 @@ a:focus {
   }
 }
 
-@media (max-width: 1299px) {
+@media (max-width: 1249px) {
   .table-of-contents {
     display: none;
   }

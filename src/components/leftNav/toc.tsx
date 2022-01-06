@@ -49,7 +49,7 @@ const Table_of_Contents = ({ headings }) => {
                 <ul>
                     {headings.map(heading => (
                         <Link className={'toc-a'} key={heading.value + '-anchor'} to={'#' + heading.value.toLowerCase().replace(/\s/g, '-').replace(/[.,\/#!$%\^&\*;:{}=\_`~()]/g,"")}>
-                            <li key={heading.value} className={'toc-item'}>
+                            <li key={heading.value} className={`toc-item toc-${heading.depth}`}>
                                 {heading.value}
                             </li>
                         </Link>

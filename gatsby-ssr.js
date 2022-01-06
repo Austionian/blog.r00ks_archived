@@ -8,6 +8,11 @@ const GetTheme = () => {
         window.__theme = newTheme;
         preferredTheme = newTheme;
         document.body.className = newTheme;
+        if (newTheme == "dark") {
+          document.querySelector('meta[name="theme-color"]').setAttribute("content", '#0e1117');
+        } else {
+          document.querySelector('meta[name="theme-color"]').setAttribute("content", '#ff7aa2');
+        }
         window.__onThemeChange(newTheme);
       }
       var preferredTheme;

@@ -268,10 +268,21 @@ a:focus {
 
 /* Custom classes */
 
-.global-wrapper {
+.global-wrapper[data-is-root-path="true"] {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
   padding: var(--spacing-10) var(--spacing-5);
+}
+
+.footer-wrapper {
+  margin: var(--spacing-0) auto;
+  max-width: var(--maxWidth-wrapper);
+  padding: var(--spacing-0) var(--spacing-5);
+}
+
+.global-wrapper[data-is-root-path="false"] {
+  margin: var(--spacing-0) auto;
+  padding: var(--spacing-10) var(--spacing-0);
 }
 
 .global-wrapper[data-is-root-path="true"] .bio {
@@ -290,17 +301,21 @@ a:focus {
   background: var(--bg);
   opacity: 1;
   z-index: 99;
-  transition: background 0.2s ease-in, font-size 0.2s ease-in;
+  margin: auto;
+  transition: background 0.2s ease-in, font-size 0.2s ease-in, box-shadow 0.2s ease-in;
 }
 
 /* styles for when the header is in sticky mode */
 .global-header.isSticky{
   font-size: var(--fontSize-1);
   opacity: .88;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0px 20px -6px rgba(0,0,0,0.7);
 }
 
 .body-wrapper {
   max-width: var(--maxWidth-body-wrapper);
+  padding: 0 var(--spacing-5);
   margin: auto;
 }
 
@@ -313,11 +328,17 @@ a:focus {
   transition: 0.5s;
 }
 
-
-.index-heading {
+.flex-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+
+.index-heading {
+  max-width: var(--maxWidth-wrapper);
+  margin: auto;
+  padding: var(--spacing-0) var(--spacing-5);
 }
 
 .main-heading {

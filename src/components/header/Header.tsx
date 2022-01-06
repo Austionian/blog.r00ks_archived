@@ -48,7 +48,7 @@ const Header = ({ title, location, sticky=false, className, ...rest }) => {
 
     return (
         <header className={className + (isSticky ? " isSticky" : "")} data-is-root-path={isRootPath} ref={ref} {...rest}>
-            <div className="index-heading">
+            <div className="flex-content index-heading">
                 {header}
                 <ThemeToggle />
             </div>

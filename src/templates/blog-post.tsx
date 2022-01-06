@@ -40,14 +40,14 @@ const BlogPostTemplate = ({ data, location }) => {
         </footer>
       </article>
       </div>
-      <nav className="blog-post-nav">
+      <nav className="blog-post-nav footer-wrapper">
         <ul
           style={{
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,
             listStyle: `none`,
-            padding: 0,
+            padding: `0 0 20px 0`,
           }}
         >
           <li>

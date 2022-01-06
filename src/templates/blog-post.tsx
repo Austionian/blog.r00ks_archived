@@ -3,8 +3,8 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import LeftNav from "../components/leftNav/leftNav"
 import Seo from "../components/seo"
-import Table_of_Contents from "../components/toc"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -17,6 +17,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
+      <LeftNav post={post} />
       <article
         className="blog-post"
         itemScope
@@ -27,9 +28,6 @@ const BlogPostTemplate = ({ data, location }) => {
           <p>{post.frontmatter.date}</p>
         </header>
         <div className="article">
-          <aside>
-            <Table_of_Contents headings={post.headings} />
-          </aside>
           <section
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"

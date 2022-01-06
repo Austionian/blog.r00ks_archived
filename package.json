@@ -8,11 +8,14 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "@emotion/styled": "^11.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@makotot/ghostui": "^2.0.0",
     "@types/react-helmet": "^6.1.5",
+    "framer-motion": "^5.5.5",
     "gatsby": "^4.4.0",
     "gatsby-plugin-anchor-links": "^1.2.1",
     "gatsby-plugin-feed": "^4.4.0",
@@ -38,6 +41,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-intersection-observer": "^8.33.1",
     "react-toggle": "^4.1.2",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13"

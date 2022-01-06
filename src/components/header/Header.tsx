@@ -9,14 +9,17 @@ const Header = ({ title, location, sticky=false, className, ...rest }) => {
     const rootPath = `/`
     const isRootPath = location.pathname === rootPath
     let header
+    let classes
 
     if (isRootPath) {
+        classes = 'flex-content';
         header = (
             <h1 className="main-heading">
             <Link to="/">{title}</Link>
             </h1>
         )
     } else {
+        classes = 'flex-content index-heading'
         header = (
             <Link className="header-link-home" to="/">
             {title}
@@ -48,7 +51,7 @@ const Header = ({ title, location, sticky=false, className, ...rest }) => {
 
     return (
         <header className={className + (isSticky ? " isSticky" : "")} data-is-root-path={isRootPath} ref={ref} {...rest}>
-            <div className="flex-content index-heading">
+            <div className={classes}>
                 {header}
                 <ThemeToggle />
             </div>

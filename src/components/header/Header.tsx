@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import ThemeToggle from "../toggle"
 
 
-const Header = ({ title, sticky=false, className, ...rest }) => {
+const Header = ({ title, location, sticky=false, className, ...rest }) => {
     const rootPath = `/`
     const isRootPath = location.pathname === rootPath
     let header

@@ -389,13 +389,13 @@ a:focus {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 849px) {
   .progress-bar-container {
     display: none;
   }
 }
 
-@media (min-width: 801px) {
+@media (min-width: 850px) {
   .progress-bar-container {
     padding: 2rem;
     position: fixed;

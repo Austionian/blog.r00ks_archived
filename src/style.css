@@ -310,7 +310,7 @@ a:focus {
   font-size: var(--fontSize-1);
   opacity: .88;
   backdrop-filter: blur(6px);
-  box-shadow: 0 0px 20px -6px rgba(0,0,0,0.7);
+  box-shadow: 0 5px 20px -20px rgba(0,0,0,0.7);
 }
 
 .body-wrapper {

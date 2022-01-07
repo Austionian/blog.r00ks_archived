@@ -14,7 +14,7 @@ const Header = ({ title, location, sticky=false, className, ...rest }) => {
     if (isRootPath) {
         classes = 'flex-content';
         header = (
-            <h1 className="main-heading title">
+            <h1 className="main-heading">
               <Link to="/">{title}</Link>
             </h1>
         )

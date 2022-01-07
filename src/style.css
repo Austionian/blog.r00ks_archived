@@ -690,13 +690,13 @@ progress {background-color: var(--color-text-dark);}
 }
 
 .react-toggle--focus .react-toggle-thumb {
-  -webkit-box-shadow: 0px 0px 3px 2px #0099E0;
-  -moz-box-shadow: 0px 0px 3px 2px #0099E0;
-  box-shadow: 0px 0px 2px 3px #0099E0;
+  -webkit-box-shadow: 0px 0px 3px 2px var(--color-primary-theme);
+  -moz-box-shadow: 0px 0px 3px 2px var(--color-primary-theme);
+  box-shadow: 0px 0px 2px 3px var(--color-primary-theme);
 }
 
 .react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
-  -webkit-box-shadow: 0px 0px 5px 5px #0099E0;
-  -moz-box-shadow: 0px 0px 5px 5px #0099E0;
-  box-shadow: 0px 0px 5px 5px #0099E0;
+  -webkit-box-shadow: 0px 0px 5px 5px var(--color-primary-theme);
+  -moz-box-shadow: 0px 0px 5px 5px var(--color-primary-theme);
+  box-shadow: 0px 0px 5px 5px var(--color-primary-theme);
 }

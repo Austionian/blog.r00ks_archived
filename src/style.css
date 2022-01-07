@@ -8,7 +8,7 @@
   --maxWidth-lg: 32rem;
   --maxWidth-xl: 36rem;
   --maxWidth-2xl: 42rem;
-  --maxWidth-3xl: 48rem;
+  --maxWidth-3xl: 46rem;
   --maxWidth-4xl: 56rem;
   --maxWidth-5xl: 64rem;
   --maxWidth-full: "100%";
@@ -464,13 +464,19 @@ a:focus {
   }
 }
 
-@media (max-width: 899px) {
-  .progress-bar-container {
-    display: none;
+@media (max-width: 849px) {
+  .progress-bar {
+    top: 55px;
+    position: fixed;
+    z-index: 999;
   }
+
+  progress::-webkit-progress-value {background-color: var(--color-text) !important;}
+  progress::-moz-progress-bar {background-color: var(--color-text) !important;}
+  progress {color: var(--color-text);}
 }
 
-@media (min-width: 900px) {
+@media (min-width: 850px) {
   .progress-bar-container {
     padding: 2rem;
     position: fixed;
@@ -479,17 +485,24 @@ a:focus {
     left: 0;
     width: 500px;
   }
+
+  .progress-bar {
+    -webkit-transform-origin: 0 100%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform-origin: 0 100%;
+    -moz-transform: rotate(90deg);
+    -ms-transform-origin: 0 100%;
+    -ms-transform: rotate(90deg);
+    transform-origin: 0 100%;
+    transform: rotate(90deg);
+  }
+
+  progress::-webkit-progress-value {background-color: var(--color-progress) !important;}
+  progress::-moz-progress-bar {background-color: var(--color-progress) !important;}
+  progress {color: var(--color-progress);}
 }
 
 .progress-bar {
-  -webkit-transform-origin: 0 100%;
-  -webkit-transform: rotate(90deg);
-  -moz-transform-origin: 0 100%;
-  -moz-transform: rotate(90deg);
-  -ms-transform-origin: 0 100%;
-  -ms-transform: rotate(90deg);
-  transform-origin: 0 100%;
-  transform: rotate(90deg);
   height: 2px;
   width: 100%;
 }
@@ -497,11 +510,6 @@ a:focus {
 /* background: */
 progress::-webkit-progress-bar {background-color: var(--color-text-dark); width: 100%;}
 progress {background-color: var(--color-text-dark);}
-
-/* value: */
-progress::-webkit-progress-value {background-color: var(--color-progress) !important;}
-progress::-moz-progress-bar {background-color: var(--color-progress) !important;}
-progress {color: var(--color-progress);}
 
 .toc-header {
   font-weight: var(--fontWeight-light);

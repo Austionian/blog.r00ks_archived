@@ -11,7 +11,7 @@ const GetTheme = () => {
         if (newTheme == "dark") {
           document.querySelector('meta[name="theme-color"]').setAttribute("content", '#0e1117');
         } else {
-          document.querySelector('meta[name="theme-color"]').setAttribute("content", '#ff7aa2');
+          document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3164dc');
         }
         window.__onThemeChange(newTheme);
       }

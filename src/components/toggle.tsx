@@ -23,7 +23,7 @@ const ThemeToggle = () => {
           document.body.classList.remove("dark");
           document.body.classList.add("light");
           localStorage.setItem('theme', 'light');
-          document.querySelector('meta[name="theme-color"]').setAttribute("content", '#ff7aa2');
+          document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3164dc');
         }
     }, [dark_theme])
 

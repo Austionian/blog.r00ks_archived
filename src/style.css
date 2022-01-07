@@ -86,7 +86,7 @@ body {
   --color-heading: #1a202c;
   --color-heading-main: black;
   --color-accent: #d1dce5;
-  --bg: #fff;
+  --bg: rgb(249, 250, 251);
   --color-icon-filter: invert(0);
 }
 

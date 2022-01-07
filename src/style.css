@@ -88,6 +88,8 @@ body {
   --color-accent: #d1dce5;
   --bg: rgb(249, 250, 251);
   --color-icon-filter: invert(0);
+  --selection-bg: rgba(255, 214, 226, 0.3);
+  --selection-color: #fe004c;
 }
 
 body.dark {
@@ -101,12 +103,14 @@ body.dark {
   --color-heading-main: #e3e3e3;
   --bg: #0e1117;
   --color-icon-filter: invert(100%) brightness(200%);
+  --selection-bg: rgba(172, 114, 132, 0.45);
+  --selection-color: var(--color-primary-theme);
 }
 
 body {
   color: var(--color-text);
   font-family: var(--font-body);
-  font-size: var(--fontSize-1);
+  font-size: 18px;
   background: var(--bg);
   transition: background 0.2s ease-in, color 0.2s ease-in;
 }
@@ -189,11 +193,25 @@ h6 > a {
 /* Prose */
 
 p {
-  line-height: var(--lineHeight-relaxed);
+  line-height: var(--spacing-8);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-8) var(--spacing-0);
   padding: var(--spacing-0);
+}
+
+.bio p {
+  line-height: var(--lineHeight-relaxed);
+  font-size: var(--fontSize-1);
+}
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-color);
+}
+::-moz-selection {
+  background: var(--selection-bg);
+  color: var(--selection-color);
 }
 
 ul,

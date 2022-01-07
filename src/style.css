@@ -58,6 +58,7 @@
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.488rem;
   --color-primary-theme: #ff7aa2;
+  /* #3164dc */
 }
 
 /* HTML elements */
@@ -297,7 +298,8 @@ a:focus {
 .footer-wrapper {
   margin: var(--spacing-0) auto;
   max-width: var(--maxWidth-wrapper);
-  padding: var(--spacing-0) var(--spacing-5);
+  padding: var(--spacing-5) var(--spacing-0);
+  font-size: var(--fontSize-1);
 }
 
 .global-wrapper[data-is-root-path="false"] {

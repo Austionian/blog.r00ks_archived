@@ -22,7 +22,7 @@ const Layout = ({ location, title, children }) => {
       <main>
         {children}
       </main>
-      <footer className="footer-wrapper">
+      <footer className="footer-wrapper" data-is-root-path={isRootPath}>
         <FontAwesomeIcon icon={faCopyright} />{" "}{new Date().getFullYear()}
         {` | `}
         Built with <a href="https://www.gatsbyjs.com">Gatsby</a>

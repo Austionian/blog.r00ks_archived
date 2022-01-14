@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
-import austin from '../public/images/alt3.png'
+import austin from '../public/images/austin_glitch.webp'
 import config from '../config'
 
 const Bio = () => {

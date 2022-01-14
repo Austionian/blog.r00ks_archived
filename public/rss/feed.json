@@ -1,12 +1,12 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Austin Rooks' blog",
+    "title": "Austin Rooks's blog",
     "home_page_url": "https://blog.r00ks.io",
     "feed_url": "https://blog.r00ks.io/rss/feed.json",
     "description": "A blog about tech, books and philosophy",
     "author": {
         "name": "Austin Rooks",
-        "url": "https://twitter.com/_SreetamDas"
+        "url": "https://twitter.com/austin_rooks"
     },
     "items": [
         {
@@ -18,7 +18,7 @@
             "date_modified": "2021-12-18T00:00:00.000Z",
             "author": {
                 "name": "Austin Rooks",
-                "url": "https://twitter.com/_SreetamDas"
+                "url": "https://twitter.com/austin_rooks"
             }
         },
         {
@@ -30,7 +30,7 @@
             "date_modified": "2021-12-22T00:00:00.000Z",
             "author": {
                 "name": "Austin Rooks",
-                "url": "https://twitter.com/_SreetamDas"
+                "url": "https://twitter.com/austin_rooks"
             }
         }
     ]

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
-        <title>Austin Rooks' blog</title>
+        <title>Austin Rooks's blog</title>
         <link>https://blog.r00ks.io</link>
         <description>A blog about tech, books and philosophy</description>
-        <lastBuildDate>Fri, 14 Jan 2022 17:52:51 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 14 Jan 2022 18:12:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2022, Austin Rooks</copyright>
@@ -15,7 +15,7 @@
             <pubDate>Sat, 18 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[An Introduction]]></description>
             <content:encoded><![CDATA[An Introduction]]></content:encoded>
-            <author>sreetam@sreetamdas.com (Austin Rooks)</author>
+            <author>austin@r00ks.io (Austin Rooks)</author>
         </item>
         <item>
             <title><![CDATA[To the Ships, Philosophers!]]></title>
@@ -24,7 +24,7 @@
             <pubDate>Wed, 22 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Living in a world that requires a new faith.]]></description>
             <content:encoded><![CDATA[Living in a world that requires a new faith.]]></content:encoded>
-            <author>sreetam@sreetamdas.com (Austin Rooks)</author>
+            <author>austin@r00ks.io (Austin Rooks)</author>
         </item>
     </channel>
 </rss>

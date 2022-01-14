@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.r00ks.io</id>
-    <title>Austin Rooks' blog</title>
-    <updated>2022-01-14T17:52:51.317Z</updated>
+    <title>Austin Rooks's blog</title>
+    <updated>2022-01-14T18:12:44.809Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Austin Rooks</name>
-        <email>sreetam@sreetamdas.com</email>
-        <uri>https://twitter.com/_SreetamDas</uri>
+        <email>austin@r00ks.io</email>
+        <uri>https://twitter.com/austin_rooks</uri>
     </author>
     <link rel="alternate" href="https://blog.r00ks.io"/>
     <link rel="self" href="https://blog.r00ks.io/rss/atom.xml"/>
@@ -23,13 +23,13 @@
         <content type="html"><![CDATA[An Introduction]]></content>
         <author>
             <name>Austin Rooks</name>
-            <email>sreetam@sreetamdas.com</email>
-            <uri>https://twitter.com/_SreetamDas</uri>
+            <email>austin@r00ks.io</email>
+            <uri>https://twitter.com/austin_rooks</uri>
         </author>
         <contributor>
             <name>Austin Rooks</name>
-            <email>sreetam@sreetamdas.com</email>
-            <uri>https://twitter.com/_SreetamDas</uri>
+            <email>austin@r00ks.io</email>
+            <uri>https://twitter.com/austin_rooks</uri>
         </contributor>
     </entry>
     <entry>
@@ -41,13 +41,13 @@
         <content type="html"><![CDATA[Living in a world that requires a new faith.]]></content>
         <author>
             <name>Austin Rooks</name>
-            <email>sreetam@sreetamdas.com</email>
-            <uri>https://twitter.com/_SreetamDas</uri>
+            <email>austin@r00ks.io</email>
+            <uri>https://twitter.com/austin_rooks</uri>
         </author>
         <contributor>
             <name>Austin Rooks</name>
-            <email>sreetam@sreetamdas.com</email>
-            <uri>https://twitter.com/_SreetamDas</uri>
+            <email>austin@r00ks.io</email>
+            <uri>https://twitter.com/austin_rooks</uri>
         </contributor>
     </entry>
 </feed>

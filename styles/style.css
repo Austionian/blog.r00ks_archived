@@ -215,8 +215,8 @@ h3 > a:hover,
 h4 > a:hover,
 h5 > a:hover,
 h6 > a:hover {
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(49,100,220,1) 100%);
+  background: rgba(49,100,220,1);
+  background: linear-gradient(90deg, rgba(49,100,220,1) 0%, rgba(238,174,202,1) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -289,6 +289,11 @@ blockquote > :last-child {
 blockquote > ul,
 blockquote > ol {
   list-style-position: inside;
+}
+
+blockquote + p {
+  font-size: var(--fontSize-1);
+  text-align: end;
 }
 
 table {

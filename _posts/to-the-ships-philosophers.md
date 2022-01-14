@@ -19,6 +19,7 @@ Demolition can be a lonely task and Nietzsche, while passionate, was lonely. (He
 In 1882, in *The Gay Science*, he published one his most famous, misintrepreted and outlandish ideas in a section titled “The Parable of the Madman,” where a madman cries to a crowd in the marketplace: 
 
 > God is dead. God remains dead. And we have killed him… Lightning and thunder require time, the light of the stars requires time, deeds require time even after they are done, before they can be seen and heard. This deed is still more distant from them than the distant stars - and yet they have done it themselves.
+
 <sub>*The Gay Science*, pg. 181-82</sub>
 
 His language invigorates still today.
@@ -39,4 +40,5 @@ What does it mean that humans believe computers can be trained and built to thin
 ## Embark!
 
 >Consider how every individual is affected by an overall philosophical justification of his way of living and thinking: he experiences it as a sun that shines especially for him and bestows warmth, blessings, and fertility on him; it makes him independent of praise and blame, self-sufficient, rich, liberal with happiness and good will; incessantly it refashions evil into good, leads all energies to bloom and ripen, and does not permit the petty weeds of grief and chagrin to come at all. In the end one exclaims: How I wish that many such new suns were yet to be created! Those who are evil or unhappy and the exceptional human being-all these should also have their philosophy, their good right, their sunshine! What is needful is not pity for them. We must learn to abandon this arrogant fancy, however long humanity has hitherto spent learning and practicing it. What these people need is not confession, conjuring of souls, and forgiveness of sins; what is needful is a new *justice*! And a new watchword. And new philosophers. The moral earth, too, is round. The moral earth, too, has its antipodes. The antipodes, too, have the right to exist. There is yet another world to be discovered-and more than one. Embark, philosophers!
-<sub>*The Gay Science*, pg. 231-32</sub>
+
+*The Gay Science*, pg. 231-32

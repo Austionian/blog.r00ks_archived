@@ -309,8 +309,10 @@ table thead tr th {
 
 /* img */
 img {
-  max-width: 630px;
+  max-width: 500px;
   margin: auto;
+  width: 100%;
+  display: flex;
 }
 
 /* Link */
@@ -564,9 +566,10 @@ a:focus {
 
 @media (max-width: 849px) {
   .progress-bar {
-    top: 64px;
+    top: 6px;
     position: fixed;
     z-index: 999;
+    height: 5px;
   }
 
   progress::-webkit-progress-value {background-color: var(--color-text) !important;}
@@ -593,6 +596,7 @@ a:focus {
     -ms-transform: rotate(90deg);
     transform-origin: 0 100%;
     transform: rotate(90deg);
+    height: 2px;
   }
 
   progress::-webkit-progress-value {background-color: var(--color-progress) !important;}
@@ -601,7 +605,6 @@ a:focus {
 }
 
 .progress-bar {
-  height: 2px;
   width: 100%;
 }
 

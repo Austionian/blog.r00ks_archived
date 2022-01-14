@@ -13,16 +13,18 @@ const Bio = () => {
 
   return (
     <div className="bio">
-      <Image
-        className="bio-avatar"
-        layout="fixed"
-        placeholder="blur"
-        src={austin}
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      />
+      <div style={{height: '50px', width: '50px'}}>
+        <Image
+          className="bio-avatar"
+          layout="fixed"
+          placeholder="blur"
+          src={austin}
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        />
+      </div>
       {author?.name && (
         <p>
           Written by <a href="https://r00ks.io"><strong>{author.name}</strong></a> {author?.summary || null}

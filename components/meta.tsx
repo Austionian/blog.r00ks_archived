@@ -30,7 +30,8 @@ const Meta = () => {
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
-      <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+      <link rel="alternate" type="application/rss+xml" href="/rss/feed.xml" />
+      <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     </Head>
   )
 }

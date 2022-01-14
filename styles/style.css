@@ -292,7 +292,7 @@ blockquote > ol {
 }
 
 blockquote + p {
-  font-size: var(--fontSize-1);
+  font-size: var(--fontSize-0);
   text-align: end;
 }
 

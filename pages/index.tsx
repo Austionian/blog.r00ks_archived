@@ -1,7 +1,8 @@
 import { GetStaticProps } from 'next'
 import Link from 'next/link'
 
-import { getSortedProjectsData } from '../lib/blog'
+import { getPostData, getSortedProjectsData } from '../lib/blog'
+import { generateRssFeed } from '../lib/rss'
 import Bio from '../components/bio'
 import Layout from '../components/layout'
 import config from '../config'
@@ -58,6 +59,9 @@ export default BlogIndex
 
 export const getStaticProps: GetStaticProps = async () => {
   const allPostsData = getSortedProjectsData()
+
+  await generateRssFeed();
+
   return {
     props: {
       allPostsData

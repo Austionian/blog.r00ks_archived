@@ -1,6 +1,6 @@
 ---
 title: Hello World
-date: "2021-12-18T22:12:03.284Z"
+date: "2021-12-18"
 description: "An Introduction"
 ---
 

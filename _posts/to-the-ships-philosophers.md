@@ -1,6 +1,6 @@
 ---
 title: "To the Ships, Philosophers!"
-date: "2021-12-22T23:46:37.121Z"
+date: "2021-12-22"
 description: "Living in a world that requires a new faith."
 ---
 

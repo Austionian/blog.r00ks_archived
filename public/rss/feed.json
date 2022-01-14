@@ -1,0 +1,37 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Austin Rooks' blog",
+    "home_page_url": "https://blog.r00ks.io",
+    "feed_url": "https://blog.r00ks.io/rss/feed.json",
+    "description": "A blog about tech, books and philosophy",
+    "author": {
+        "name": "Austin Rooks",
+        "url": "https://twitter.com/_SreetamDas"
+    },
+    "items": [
+        {
+            "id": "https://blog.r00ks.io/blog/hello-world",
+            "content_html": "An Introduction",
+            "url": "https://blog.r00ks.io/blog/hello-world",
+            "title": "Hello World",
+            "summary": "An Introduction",
+            "date_modified": "2021-12-18T00:00:00.000Z",
+            "author": {
+                "name": "Austin Rooks",
+                "url": "https://twitter.com/_SreetamDas"
+            }
+        },
+        {
+            "id": "https://blog.r00ks.io/blog/to-the-ships-philosophers",
+            "content_html": "Living in a world that requires a new faith.",
+            "url": "https://blog.r00ks.io/blog/to-the-ships-philosophers",
+            "title": "To the Ships, Philosophers!",
+            "summary": "Living in a world that requires a new faith.",
+            "date_modified": "2021-12-22T00:00:00.000Z",
+            "author": {
+                "name": "Austin Rooks",
+                "url": "https://twitter.com/_SreetamDas"
+            }
+        }
+    ]
+}

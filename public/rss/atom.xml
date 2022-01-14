@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://blog.r00ks.io</id>
+    <title>Austin Rooks' blog</title>
+    <updated>2022-01-14T17:52:51.317Z</updated>
+    <generator>Feed for Node.js</generator>
+    <author>
+        <name>Austin Rooks</name>
+        <email>sreetam@sreetamdas.com</email>
+        <uri>https://twitter.com/_SreetamDas</uri>
+    </author>
+    <link rel="alternate" href="https://blog.r00ks.io"/>
+    <link rel="self" href="https://blog.r00ks.io/rss/atom.xml"/>
+    <subtitle>A blog about tech, books and philosophy</subtitle>
+    <icon>https://blog.r00ks.io/favicon/favicon.png</icon>
+    <rights>All rights reserved 2022, Austin Rooks</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello World]]></title>
+        <id>https://blog.r00ks.io/blog/hello-world</id>
+        <link href="https://blog.r00ks.io/blog/hello-world"/>
+        <updated>2021-12-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[An Introduction]]></summary>
+        <content type="html"><![CDATA[An Introduction]]></content>
+        <author>
+            <name>Austin Rooks</name>
+            <email>sreetam@sreetamdas.com</email>
+            <uri>https://twitter.com/_SreetamDas</uri>
+        </author>
+        <contributor>
+            <name>Austin Rooks</name>
+            <email>sreetam@sreetamdas.com</email>
+            <uri>https://twitter.com/_SreetamDas</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[To the Ships, Philosophers!]]></title>
+        <id>https://blog.r00ks.io/blog/to-the-ships-philosophers</id>
+        <link href="https://blog.r00ks.io/blog/to-the-ships-philosophers"/>
+        <updated>2021-12-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Living in a world that requires a new faith.]]></summary>
+        <content type="html"><![CDATA[Living in a world that requires a new faith.]]></content>
+        <author>
+            <name>Austin Rooks</name>
+            <email>sreetam@sreetamdas.com</email>
+            <uri>https://twitter.com/_SreetamDas</uri>
+        </author>
+        <contributor>
+            <name>Austin Rooks</name>
+            <email>sreetam@sreetamdas.com</email>
+            <uri>https://twitter.com/_SreetamDas</uri>
+        </contributor>
+    </entry>
+</feed>

@@ -1,11 +1,13 @@
+import { Feed } from 'feed'
 import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import { remark } from 'remark'
 import html from 'remark-html'
+import matter from 'gray-matter'
+import path from 'path'
 import { rehype } from 'rehype'
-import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+import rehypeSlug from 'rehype-slug'
+import { remark } from 'remark'
+
 
 const blogDirectory = path.join(process.cwd(), '_posts')
 
@@ -79,3 +81,23 @@ export async function getPostData(id: string) {
     ...(matterResult.data as { date: string; title: string })
   }
 }
+
+export const getBlogPostsData = async () => {
+  // path where the MDX files are
+  const files = fs
+    .readdirSync(blogDirectory)
+    .filter((file) => file.endsWith(".md"));
+  const postsData = files.map((file) => {
+    // grab the metadata
+    const name = path.join(blogDirectory, file);
+    const fileContents = fs.readFileSync(name, "utf8");
+    const matterResult = matter(fileContents)
+    // remove the ".mdx" from the filename
+    const slug = file.replace(/\.md?$/, "");
+    return {
+      ...matterResult,
+      slug,
+    };
+  });
+  return postsData;
+};

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Austin Rooks's blog.</title>
+        <link>https://blog.r00ks.io</link>
+        <description>I'll be writing about tech, books and philosophy.</description>
+        <lastBuildDate>Fri, 14 Jan 2022 17:12:54 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <copyright>2022</copyright>
+        <item>
+            <link>https://blog.r00ks.io/undefined</link>
+            <guid>https://blog.r00ks.io/undefined</guid>
+            <pubDate>Invalid Date</pubDate>
+            <author>austin@r00ks.io (Austin Rooks)</author>
+        </item>
+        <item>
+            <link>https://blog.r00ks.io/undefined</link>
+            <guid>https://blog.r00ks.io/undefined</guid>
+            <pubDate>Invalid Date</pubDate>
+            <author>austin@r00ks.io (Austin Rooks)</author>
+        </item>
+    </channel>
+</rss>

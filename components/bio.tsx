@@ -31,19 +31,19 @@ const Bio = () => {
           <br/>
           Find me on
           {` `}
-          <a href={`https://twitter.com/${social.twitter || ``}`}>
+          <a href={`https://twitter.com/${social.twitter || ``}`} aria-label="twitter profile">
             <FontAwesomeIcon
               icon={faTwitter} 
             />
           </a>
           {`, `}
-          <a href={`https://github.com/${social.github || ''}`}>
+          <a href={`https://github.com/${social.github || ''}`} aria-label="github profile">
             <FontAwesomeIcon
               icon={faGithub}
             />
           </a>
           {`,or `}
-          <a href={`mailto:${social?.email || ''}`}>
+          <a href={`mailto:${social?.email || ''}`}aria-label="email address">
             <FontAwesomeIcon 
               icon={faPaperPlane}
             />

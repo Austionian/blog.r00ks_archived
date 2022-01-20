@@ -4,7 +4,7 @@
         <title>Austin Rooks's blog</title>
         <link>https://blog.r00ks.io</link>
         <description>A blog about tech, books and philosophy</description>
-        <lastBuildDate>Mon, 17 Jan 2022 19:18:40 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 20 Jan 2022 22:34:14 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <copyright>All rights reserved 2022, Austin Rooks</copyright>
@@ -18,7 +18,7 @@
             <author>austin@r00ks.io (Austin Rooks)</author>
         </item>
         <item>
-            <title><![CDATA[Moving to Next.js]]></title>
+            <title><![CDATA[Moving from Gatsby to Next.js]]></title>
             <link>https://blog.r00ks.io/blog/moving-to-next-js</link>
             <guid>https://blog.r00ks.io/blog/moving-to-next-js</guid>
             <pubDate>Sun, 16 Jan 2022 00:00:00 GMT</pubDate>

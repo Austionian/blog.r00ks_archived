@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://blog.r00ks.io</id>
     <title>Austin Rooks's blog</title>
-    <updated>2022-01-17T19:18:40.932Z</updated>
+    <updated>2022-01-20T22:34:14.067Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Austin Rooks</name>
@@ -33,7 +33,7 @@
         </contributor>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Moving to Next.js]]></title>
+        <title type="html"><![CDATA[Moving from Gatsby to Next.js]]></title>
         <id>https://blog.r00ks.io/blog/moving-to-next-js</id>
         <link href="https://blog.r00ks.io/blog/moving-to-next-js"/>
         <updated>2022-01-16T00:00:00.000Z</updated>

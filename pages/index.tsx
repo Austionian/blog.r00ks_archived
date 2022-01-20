@@ -27,6 +27,8 @@ const BlogIndex = ({ allPostsData }: {
 
           return (
             <li key={`/blog/${id}`}>
+              <Link href={`/blog/${id}`}>
+              <a className="post-link">
               <article
                 className="post-list-item"
                 itemScope
@@ -34,18 +36,23 @@ const BlogIndex = ({ allPostsData }: {
               >
                 <header>
                   <h2>
-                    <Link href={`/blog/${id}`}>
-                      <a><span itemProp="headline">{title}</span></a>
-                    </Link>
+                    
+                      <span itemProp="headline">{title}</span>
+                    
                   </h2>
-                  <small><DateFormatter dateString={date} /></small>
+                  <small className='date-text'><DateFormatter dateString={date} /></small>
                 </header>
                 <section>
                   <p>
                     {description}
                   </p>
+                  <p className="text-small">
+                    Read more
+                  </p>
                 </section>
               </article>
+              </a>
+              </Link>
             </li>
           )
         })}

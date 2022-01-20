@@ -1,4 +1,3 @@
-import { Feed } from 'feed'
 import fs from 'fs'
 import html from 'remark-html'
 import matter from 'gray-matter'

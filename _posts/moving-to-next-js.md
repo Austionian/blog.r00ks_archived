@@ -45,4 +45,4 @@ The fact that deploying is just pushing to ```main``` makes me slightly worried 
 ## Jamming forward
 My eyes have been opened to the JAM stack and it's incredible what can be accomplished. Both Next and Gatsby give React developers (which I am not) great frameworks to easily create highly performative webapps. Coupled with the fact that it's easy to host these for free, it's undeniably the direction of the Internet.
 
-I certianly plan to build future frontends with Next in particular, but the JAM stack in general.
+I certianly plan to build future frontends with Next.

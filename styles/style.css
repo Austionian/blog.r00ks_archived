@@ -116,7 +116,7 @@ body.dark {
   --box-shadow: 0 20px 20px -20px #000;
   --text-shadow: 2px 3px #ffffff47;
   --color-opp: #fff;
-  --color-primary-theme: #cdc9ff;
+  --color-primary-theme: #7268ff;
   --color-secondary-theme: #62a8b5;
 }
  
@@ -214,7 +214,7 @@ li > a {
 .text-small {
   font-size: var(--fontSize-0);
   font-weight: var(--fontWeight-extrabold);
-  color: var(--color-primary-theme);
+  color: var(--color-primary);
 }
 
 .post-link:hover h2 {
@@ -240,7 +240,7 @@ li > a {
 }
 
 .date-text {
-  color: var(--color-primary-theme);
+  color: var(--color-primary);
   font-weight: var(--fontWeight-bold);
 }
 
@@ -282,7 +282,7 @@ p {
 
 h2 .icon-link::before {
   content: '# ';
-  color: var(--color-primary-theme);
+  color: var(--color-primary);
 }
 
 ul,
@@ -482,7 +482,12 @@ a:focus {
 .main-heading {
   font-family: var(--fontFamily-title);
   margin: 0;
-  color: var(--color-primary-theme);
+  background: var(--color-primary-theme);
+  background: linear-gradient(90deg, var(--color-primary-theme) 0%, var(--color-secondary-theme) 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0px 0px #00000000;
 }
 
 @media (min-width: 700px) {
@@ -521,7 +526,7 @@ a:focus {
 .post-list-item h2 {
   font-size: var(--fontSize-4);
   font-weight: 900;
-  color: var(--color-primary-theme);
+  color: var(--color-primary);
   margin-bottom: var(--spacing-2);
   margin-top: var(--spacing-0);
 }

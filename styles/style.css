@@ -283,6 +283,8 @@ p {
 h2 .icon-link::before {
   content: '# ';
   color: var(--color-primary);
+  font-size: 1.5rem;
+  vertical-align: middle;
 }
 
 ul,
@@ -638,6 +640,7 @@ a:focus {
     display: flex;
     left: 0;
     width: 500px;
+    z-index: -1;
   }
 
   .progress-bar {

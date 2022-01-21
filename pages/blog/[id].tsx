@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import Link from 'next/link'
 
-import { getAllPostIds, getPostData } from '../../lib/blog'
+import { getAllPostIds, getPostData, getSortedProjectsData } from '../../lib/blog'
 
 import Bio from '../../components/bio'
 import Layout from '../../components/layout'
@@ -20,6 +20,14 @@ const Post = ({
     description: string
     contentHtml: string
     headings: any[]
+    previous: {
+      slug: string
+      title: string
+    }
+    next: {
+      slug: string
+      title: string
+    }
   }
 }) => {
   const [ids, setIds] = React.useState<Array<{ id: string; title: string }>>(
@@ -76,20 +84,6 @@ const Post = ({
             <a>← Back to home</a>
           </Link>
         </div>
-          {/* <li>
-            {previous && (
-              <Link href={previous.fields.slug}>
-                <a>← {previous.frontmatter.title}</a>
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link href={next.fields.slug}>
-                <a>{next.frontmatter.title} →</a>
-              </Link>
-            )}
-          </li> */}
         </ul>
       </nav>
     </Layout>

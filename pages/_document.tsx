@@ -15,17 +15,17 @@ export default class MyDocument extends Document {
                   var supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
                   if (!theme && supportDarkMode) {
                       document.body.classList.add('dark');
-                      document.querySelector('meta[name="theme-color"]').setAttribute("content", '#0e1117');
+                      document.querySelector('meta[name="theme-color"]').setAttribute("content", '#000');
                   }
                   if (!theme) {
-                      document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3164dc');
+                      document.querySelector('meta[name="theme-color"]').setAttribute("content", '#f0e7db');
                       return;
                   }
                   document.body.classList.add(theme);
                   if (theme === 'dark') {
-                      document.querySelector('meta[name="theme-color"]').setAttribute("content", '#0e1117');
+                      document.querySelector('meta[name="theme-color"]').setAttribute("content", '#000');
                   } else {
-                      document.querySelector('meta[name="theme-color"]').setAttribute("content", '#3164dc');
+                      document.querySelector('meta[name="theme-color"]').setAttribute("content", '#f0e7db');
                   } 
               })();`,
             }}

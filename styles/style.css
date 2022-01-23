@@ -89,7 +89,7 @@ body {
   --color-heading: #1a202c;
   --color-heading-main: black;
   --color-accent: #d1dce5;
-  --bg: rgb(249, 250, 251);
+  --bg: #fff;
   --color-icon-filter: invert(0);
   --selection-bg: rgba(49, 100, 220, .3);
   --selection-color: var(--color-primary-theme);
@@ -450,7 +450,6 @@ a:focus {
   z-index: 999;
   top: 0;
   left: 0;
-  display: none;
 }
 
 .topbar {

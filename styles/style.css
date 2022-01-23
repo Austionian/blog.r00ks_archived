@@ -109,7 +109,7 @@ body.dark {
   --color-progress: rgb(98, 98, 109);
   --color-heading: #e3e3e3;
   --color-heading-main: #e3e3e3;
-  --bg: #000;
+  --bg: #020408;
   --color-icon-filter: invert(100%) brightness(200%);
   --selection-bg: rgba(49, 100, 220, .3);
   --selection-color: var(--color-primary-theme);
@@ -218,7 +218,7 @@ li > a {
 }
 
 .post-link:hover h2 {
-  -webkit-text-stroke: 2px var(--color-text);
+  -webkit-text-stroke: 1px var(--color-text);
   color: var(--bg);
 }
 
@@ -683,9 +683,9 @@ progress {background-color: var(--color-text-dark);}
   margin-bottom: 25px;
 }
 
-.active {
+/* .active {
   font-weight: var(--fontWeight-bold);
-}
+} */
 
 .active > li {
   color: var(--color-primary-theme);

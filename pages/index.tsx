@@ -36,9 +36,7 @@ const BlogIndex = ({ allPostsData }: {
               >
                 <header>
                   <h2>
-                    
                       <span itemProp="headline">{title}</span>
-                    
                   </h2>
                   <small className='date-text'><DateFormatter dateString={date} /></small>
                 </header>
